@@ -1,4 +1,4 @@
-<templateSet group="PHP">
+<templateSet group="fisruk_php">
   <template name="exception" value="use Exception;&#10;&#10;class $EXCEPTION$Exception extends Exception {&#10;    public function __construct($message = null) {&#10;        $message = $message ?: '$MESSAGE$';&#10;        parent::__construct($message);&#10;    }&#10;}" description="Exception" toReformat="true" toShortenFQNames="true">
     <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
