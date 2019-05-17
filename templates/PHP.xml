@@ -1,0 +1,17 @@
+<templateSet group="PHP">
+  <template name="exception" value="use Exception;&#10;&#10;class $EXCEPTION$Exception extends Exception {&#10;    public function __construct($message = null) {&#10;        $message = $message ?: '$MESSAGE$';&#10;        parent::__construct($message);&#10;    }&#10;}" description="Exception" toReformat="true" toShortenFQNames="true">
+    <variable name="EXCEPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="sy-dd" value="dump($$$END$); die;" description="symfony dump(); die;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="if!empty" value="if(!empty($VAR$){&#10;    $END$ = $VAR$;&#10;}" description="if(!empty($var){...}" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
